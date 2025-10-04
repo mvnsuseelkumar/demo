@@ -1,0 +1,73 @@
+.roadmap-card {
+  background: white;
+  border-radius: 8px;
+  padding: 25px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.roadmap-card h3 {
+  margin-bottom: 20px;
+  color: var(--primary-color);
+}
+
+.weeks-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.week-item {
+  border: 2px solid var(--border-color);
+  border-radius: 6px;
+  padding: 15px;
+  transition: all 0.3s;
+}
+
+.week-item.completed {
+  background: #f0fff4;
+  border-color: var(--success-color);
+}
+
+.week-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.week-header h4 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.topics {
+  color: var(--text-dark);
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+.hours {
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
+
+.progress-bar {
+  height: 8px;
+  background: #e2e8f0;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: var(--success-color);
+  transition: width 0.3s;
+}
+
+.progress-text {
+  text-align: center;
+  color: var(--text-light);
+  font-size: 0.9rem;
+}

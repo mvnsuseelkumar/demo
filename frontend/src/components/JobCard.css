@@ -1,0 +1,65 @@
+.job-card {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.job-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 10px;
+}
+
+.job-header h3 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.match-badge {
+  color: white;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.company {
+  color: var(--text-light);
+  margin-bottom: 15px;
+}
+
+.missing-skills {
+  margin: 15px 0;
+}
+
+.label {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  margin-bottom: 8px;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-tag {
+  background: #edf2f7;
+  padding: 5px 12px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+}
+
+.skill-tag.missing {
+  background: #fed7d7;
+  color: #c53030;
+}
