@@ -30,9 +30,6 @@ def chat_with_ai():
 def suggest_careers():
     data = request.get_json()
     skills = data.get('skills', [])
-
-    if not skills:
-        return jsonify({"error": "Skills are required to suggest careers."}), 400
     
     prompt = f"Based on these skills: {', '.join(skills)}, suggest 3 suitable career paths."
     
